@@ -1,18 +1,25 @@
 import { useState } from "react";
 import { questions } from "./questions";
 import QuestionCard from "./QuestionCard";
+import Summary from "./Summary";
+
 
 function QuestionFlow() {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [answers, setAnswers] = useState({});
 
     function goNext() {
-        if (currentIndex < questions.length - 1) {
-            setCurrentIndex(currentIndex + 1);
+        setAnswers(prev => ({
+            ...prev, [index]: answer
+
+        }));
+
+        setCurrentIndex(prev => prev + 1);
        }
     }
 
     if (currentIndex >= questions.length) {
-        return <div className="app">Finished!</div>;
+        return <Summary answers={answers} questions={questions} />;
     }
 
     

@@ -15,7 +15,7 @@ export default function QuestionCard({ data, onNext, index }) {
     setYesChecked(true);
     setNotSureChecked(false);
     setTimeout(() => {
-        onNext();
+        onNext(index, "yes");
     }, 1500);
   }
 

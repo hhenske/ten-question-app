@@ -2,7 +2,7 @@ export const questions = [
   {
     id: 1,
 
-    question: "Do you believe the Scriptures are true?",
+    question: "#1 Do you believe the Scriptures are true?",
 
     consider: {
       reference: "2 Timothy 3:16-17",
@@ -67,16 +67,16 @@ export const questions = [
   {
     id: 2,
 
-    question: "Do you believe Jesus told the truth?",
+    question: "#2 Do you believe Jesus told the truth?",
 
     consider: {
       reference: "John 14:6",
       text:
-        "Jesus said, 'I am the way, and the truth, and the life. No one comes to the Father except through me.'"
+        "[Jesus says] I am the way, and the truth, and the life. No one comes to the Father except through me."
     },
 
     statement:
-      "You believe the words of Jesus are true because He claimed divine authority and His life and resurrection were historically confirmed.",
+      "Yes, I believe the words of Jesus are true because He claimed divine authority and His life and resurrection were historically confirmed.",
 
     tabs: {
       biblical: {
@@ -125,7 +125,7 @@ export const questions = [
   {
     id: 3,
 
-    question: "Do you believe Jesus came to seek and save the lost?",
+    question: "#3 Do you believe Jesus came to seek and save the lost?",
 
     consider: {
       reference: "Luke 19:10",
@@ -134,7 +134,7 @@ export const questions = [
     },
 
     statement:
-      "You believe Jesus came to seek and save the lost because He said so Himself.",
+      "Yes, I believe Jesus came to seek and save the lost because that's what he said.",
 
     verses: [
       {
@@ -159,7 +159,7 @@ export const questions = [
     id: 4,
 
     question:
-      "Did Jesus say why He came to seek and save the lost?",
+      "#4 Did Jesus say why He came to seek and save the lost?",
 
     consider: {
       reference: "John 3:16",
@@ -168,7 +168,7 @@ export const questions = [
     },
 
     statement:
-      "You believe Jesus saves because God loves us and sent Him for that purpose.",
+      "Yes, I believe Jesus saves because God loves us and sent Him for that purpose.",
 
     verses: [
       {
@@ -193,7 +193,7 @@ export const questions = [
     id: 5,
 
     question:
-      "Do the Scriptures say how Jesus would save the lost?",
+      "#5 Do the Scriptures say how Jesus would save the lost?",
 
     consider: {
       reference: "1 Peter 2:24",
@@ -202,7 +202,7 @@ export const questions = [
     },
 
     statement:
-      "You believe Jesus saved us by dying for our sins on the cross.",
+      "Yes, I believe Jesus saved us by dying for our sins on the cross.",
 
     verses: [
       {
@@ -227,7 +227,7 @@ export const questions = [
     id: 6,
 
     question:
-      "Do the Scriptures say what Jesus saves us from?",
+      "#6 Do the Scriptures say what Jesus saves us from?",
 
     consider: {
       reference: "John 3:36",
@@ -236,7 +236,7 @@ export const questions = [
     },
 
     statement:
-      "You believe Jesus saves us from sin, wrath, and spiritual death.",
+      "Yes, I believe Jesus saves us from sin, wrath, and spiritual death.",
 
     verses: [
       {
@@ -256,7 +256,7 @@ export const questions = [
     id: 7,
 
     question:
-      "Do the Scriptures explain who the lost are?",
+      "#7 Do the Scriptures explain who the lost are?",
 
     consider: {
       reference: "Isaiah 53:6",
@@ -265,7 +265,7 @@ export const questions = [
     },
 
     statement:
-      "You believe all people are lost and in need of salvation.",
+      "Yes, I believe all people are lost and in need of salvation.",
 
     verses: [
       {
@@ -285,7 +285,7 @@ export const questions = [
     id: 8,
 
     question:
-      "Do you believe Jesus came to save you personally?",
+      "#8 Do you believe Jesus came to save you personally?",
 
     consider: {
       reference: "2 Peter 3:9",
@@ -294,7 +294,7 @@ export const questions = [
     },
 
     statement:
-      "You believe Jesus came to save you personally.",
+      "Yes, I believe Jesus came to save me personally.",
 
     verses: [
       {
@@ -314,7 +314,7 @@ export const questions = [
     id: 9,
 
     question:
-      "Do you need salvation through Jesus?",
+      "#9 Do you need salvation through Jesus?",
 
     consider: {
       reference: "Romans 3:23",
@@ -323,7 +323,7 @@ export const questions = [
     },
 
     statement:
-      "You recognize your need for salvation through Jesus.",
+      "Yes, I recognize my need for salvation through Jesus.",
 
     verses: [
       {
@@ -343,7 +343,7 @@ export const questions = [
     id: 10,
 
     question:
-      "Are you ready to say yes to Jesus?",
+      "#10 Are you ready to say yes to Jesus?",
 
     consider: {
       reference: "Acts 2:38",
@@ -352,7 +352,7 @@ export const questions = [
     },
 
     statement:
-      "You are ready to follow Jesus.",
+      "Yes, I am ready to follow Jesus.",
 
     verses: [
       {

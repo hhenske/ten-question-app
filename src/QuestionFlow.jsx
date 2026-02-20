@@ -2,36 +2,61 @@ import { useState } from "react";
 import { questions } from "./questions";
 import QuestionCard from "./QuestionCard";
 import Summary from "./Summary";
-
+import { AnimatePresence, motion} from "framer-motion";
 
 function QuestionFlow() {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [answers, setAnswers] = useState({});
 
-    function goNext() {
-        setAnswers(prev => ({
-            ...prev, [index]: answer
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-        }));
+  const [answers, setAnswers] = useState({});
 
-        setCurrentIndex(prev => prev + 1);
-       }
-    }
+  function handleNext(index, answer) {
 
-    if (currentIndex >= questions.length) {
-        return <Summary answers={answers} questions={questions} />;
-    }
+    setAnswers(prev => ({
+      ...prev,
+      [index]: answer
+    }));
 
-    
+    setCurrentIndex(prev => prev + 1);
+  }
+
+  if (currentIndex >= questions.length) {
     return (
-        <div className="app">
-            <QuestionCard
-                data={questions[currentIndex]}
-                index={currentIndex}
-                onNext={goNext}
-            />
-        </div>
+      <motion.div
+        initial={{ opacity: 0, y:40 }}
+        animate={{ opacity: 1, y:0 }}
+        exit={{ opacity: 0, y:-40 }}
+       >
+        <Summary
+            answers={answers}
+            questions={questions}
+        />
+      </motion.div>
     );
+  }
+
+  return (
+    <div className="app">
+
+        <AnimatePresence mode="wait">
+            
+            <motion.div
+                key={currentIndex}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ duration: 0.5 }}
+            >
+                <QuestionCard
+                    data={questions[currentIndex]}
+                    index={currentIndex}
+                    onNext={handleNext}
+                />
+
+                </motion.div>
+        </AnimatePresence>
+    </div>
+  );
 }
 
 export default QuestionFlow;

@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
 
 export default function QuestionCard({ data, onNext, index }) {
 
@@ -52,6 +54,7 @@ export default function QuestionCard({ data, onNext, index }) {
   return (
     <div className="card">
 
+
       {/* Question or Statement */}
       <h2>
         {yesChecked ? data.statement : data.question}
@@ -74,93 +77,108 @@ export default function QuestionCard({ data, onNext, index }) {
         </div>
       )}
 
-      {/* Info section */}
-      
 
-      {(notSureChecked || expanded) && (
-        <div className="info">
+            <AnimatePresence>
+        {expanded && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            style={{ overflow: "hidden" }}
+          >
+            <div className="info">
 
-          <button
-            className="close-button"
-            onClick={() => {
-            setNotSureChecked(false);
-            setShowStillNotSure(false);
-            setExpanded(false);
-            setActiveTab(Object.keys(data.tabs)[0]);
-            }}
-            >
-            X
-          </button>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95     }}
+                className="close-button"
+                onClick={() => {
+                  setNotSureChecked(false);
+                  setShowStillNotSure(false);
+                  setExpanded(false);
 
+                  if (data.tabs) {
+                    setActiveTab(Object.keys(data.tabs)[0]);
+                  }
+                }}
+              >
+                X
+              </motion.button>
 
-          {/* Consider verse */}
-                
-          {data.consider && (
-            <div className="consider-verse">
-              <strong>{data.consider.reference} ESV</strong>
-              <p>{data.consider.text}</p>
+              {/* Consider verse */}
+              {data.consider && (
+                <div className="consider-verse">
+                  <strong>{data.consider.reference} ESV</strong>
+                  <p>{data.consider.text}</p>
+                </div>
+              )}
+
+              {/* Tabs */}
+              {data.tabs && (
+                <div>
+
+                  {/* Tab buttons */}
+                  <div className="tab-buttons">
+                    {Object.entries(data.tabs).map(([key, tab]) => (
+                      <motion.button
+                        key={key}
+                        className={activeTab === key ? "tab active" : "tab"}
+                        onClick={() => setActiveTab(key)}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        {tab.title}
+                      </motion.button>
+                    ))}
+                  </div>
+
+                  {/* Tab content */}
+                  <div className="tab-content">
+
+                    {data.tabs[activeTab]?.points &&
+                      data.tabs[activeTab].points.map((point, i) => (
+                        <p key={i}>• {point}</p>
+                      ))}
+
+                    {data.tabs[activeTab]?.verses &&
+                      data.tabs[activeTab].verses.map((verse, i) => (
+                        <p key={i}>
+                          <strong>{verse.reference}</strong> — {verse.text}
+                        </p>
+                      ))}
+
+                  </div>
+
+                </div>
+              )}
+
             </div>
-          )}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
-          {/* Tabs */}
-          {data.tabs && (
-            <div>
+      {/* Checkboxes */}
+      <div className="checkboxes">
+        <label>
+          <input
+            type="checkbox"
+            checked={yesChecked}
+            onChange={handleYes}
+          />
+          Yes
+        </label>
 
-              {/* Tab buttons */}
-              <div className="tab-buttons">
-                {Object.entries(data.tabs).map(([key, tab]) => (
-                  <button
-                    key={key}
-                    className={activeTab === key ? "tab active" : "tab"}
-                    onClick={() => setActiveTab(key)}
-                  >
-                    {tab.title}
-                  </button>
-                ))}
-              </div>
+        <label>
+          <input
+            type="checkbox"
+            checked={notSureChecked}
+            onChange={handleNotSure}
+          />
+          {showStillNotSure ? "Still Not Sure" : "Not Sure"}
+        </label>
+      </div>
 
-              {/* Tab content */}
-              <div className="tab-content">
-
-                {data.tabs[activeTab]?.points &&
-                  data.tabs[activeTab].points.map((point, i) => (
-                    <p key={i}>• {point}</p>
-                  ))}
-
-                {data.tabs[activeTab]?.verses &&
-                  data.tabs[activeTab].verses.map((verse, i) => (
-                    <p key={i}>
-                      <strong>{verse.reference}</strong> — {verse.text}
-                    </p>
-                  ))}
-
-              </div>
-
-            </div>
-          )}
-
-        </div>
-      )}
-        {/* Checkboxes */}
-          <div className="checkboxes">
-            <label>
-              <input
-                type="checkbox"
-                checked={yesChecked}
-                onChange={handleYes}
-              /> 
-              Yes
-            </label>
-
-            <label>
-              <input
-                type="checkbox"
-                checked={notSureChecked}
-                onChange={handleNotSure}
-              />
-              {showStillNotSure ? "Still Not Sure" : "Not Sure"}
-            </label>
-          </div>
     </div>
   );
 }

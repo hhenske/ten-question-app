@@ -7,8 +7,12 @@ import { AnimatePresence, motion} from "framer-motion";
 function QuestionFlow() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const [answers, setAnswers] = useState({});
+
+  function handleRestart() {
+    setAnswers([]);
+    setCurrentIndex(0);
+  }
 
   function handleNext(index, answer) {
 
@@ -30,11 +34,13 @@ function QuestionFlow() {
         <Summary
             answers={answers}
             questions={questions}
+            onRestart= {handleRestart}
         />
       </motion.div>
     );
   }
 
+  
   return (
     <div className="app">
 

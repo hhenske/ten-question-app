@@ -64,11 +64,11 @@ export default function QuestionCard({ data, onNext, index }) {
       </h2>
 
       {!yesChecked && data.consider && (
-        <div style={{ fontSize: "14px", marginTop: "4px" }}>
+        <div className="consider-prompt">
           Consider{" "}
           <span
             onClick={handleConsiderClick}
-            style={{ textDecoration: "underline", cursor: "pointer", color: "#1a73e8" }}
+            className="consider-link"
           >
             {data.consider.reference} ESV
           </span>

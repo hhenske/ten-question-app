@@ -202,7 +202,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, I believe Jesus saved us by dying for our sins on the cross.",
+      "Yes, I believe the scriptures sayJesus saved us by dying for our sins on the cross.",
 
     verses: [
       {
@@ -236,7 +236,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, I believe Jesus saves us from sin, wrath, and spiritual death.",
+      "Yes, I believe the scriptures say we are saved from sin, wrath, and spiritual death.",
 
     verses: [
       {
@@ -265,7 +265,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, I believe all people are lost and in need of salvation.",
+      "Yes, I believe the scriptures explain that all people are lost and in need of salvation.",
 
     verses: [
       {

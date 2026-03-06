@@ -40,3 +40,36 @@
 .read-the-docs {
   color: #888;
 }
+
+.progress {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.progress__step {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: #ddd;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.progress__step:hover {
+  transform: scale(1.1);
+}
+
+.progress__step.complete {
+  background: #4caf50;
+  color: white;
+}
+
+.progress__step.active {
+  background: #1976d2;
+  color: white;
+}
+

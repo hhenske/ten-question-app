@@ -3,6 +3,8 @@ import { questions } from "./questions";
 import QuestionCard from "./QuestionCard";
 import Summary from "./Summary";
 import { AnimatePresence, motion} from "framer-motion";
+import ProgressBar from "./ProgressBar";
+
 
 function QuestionFlow() {
 
@@ -10,7 +12,7 @@ function QuestionFlow() {
   const [answers, setAnswers] = useState({});
 
   function handleRestart() {
-    setAnswers([]);
+    setAnswers({});
     setCurrentIndex(0);
   }
 
@@ -40,6 +42,11 @@ function QuestionFlow() {
     );
   }
 
+  function handleSelect(index) {
+  setCurrentIndex(index);
+}
+
+
   
   return (
     <div className="app">
@@ -56,11 +63,19 @@ function QuestionFlow() {
                 <QuestionCard
                     data={questions[currentIndex]}
                     index={currentIndex}
+                    answer={answers[currentIndex]}
                     onNext={handleNext}
                 />
 
                 </motion.div>
         </AnimatePresence>
+
+        <ProgressBar
+          total={questions.length}
+          current={currentIndex}
+          onSelect={handleSelect}
+      />
+
     </div>
   );
 }

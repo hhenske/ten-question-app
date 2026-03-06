@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function QuestionCard({ data, onNext, index }) {
+export default function QuestionCard({ data, onNext, answer, index }) {
 
+  const [selected, setSelected] = useState(answer ?? null);
   const [yesChecked, setYesChecked] = useState(false);
   const [notSureChecked, setNotSureChecked] = useState(false);
   const [expanded, setExpanded] = useState(false);
@@ -21,6 +22,10 @@ export default function QuestionCard({ data, onNext, index }) {
       setActiveTab(null);
     }
   }, [data]);
+
+  useEffect(() => {
+    setSelected(answer ?? null);
+  }, [answer]);
 
   function handleYes() {
     setYesChecked(true);

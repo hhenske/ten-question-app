@@ -25,6 +25,11 @@ export default function QuestionCard({ data, onNext, index }) {
   function handleYes() {
     setYesChecked(true);
     setNotSureChecked(false);
+    
+    if (showStillNotSure) {
+      setExpanded(false);   
+    }
+    
     setTimeout(() => {
       onNext(index, "yes");
     }, 2500);
@@ -37,6 +42,10 @@ export default function QuestionCard({ data, onNext, index }) {
       setNotSureChecked(false);
       setYesChecked(false);
       return;
+    } else {
+      setNotSureChecked(true);
+      setYesChecked(false);
+      setExpanded
     }
     onNext(index, "not_sure");
   }

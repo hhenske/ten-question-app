@@ -46,11 +46,19 @@ function QuestionFlow() {
   setCurrentIndex(index);
 }
 
+function handleBack() {
+  setCurrentIndex((prev) => Math.max(prev - 1, 0));
+}
 
   
   return (
     <div className="app">
-
+        <ProgressBar
+          total={questions.length}
+          current={currentIndex}
+          onSelect={handleSelect}
+      />
+      
         <AnimatePresence mode="wait">
             
             <motion.div
@@ -65,16 +73,11 @@ function QuestionFlow() {
                     index={currentIndex}
                     answer={answers[currentIndex]}
                     onNext={handleNext}
+                    onBack={handleBack}
                 />
 
                 </motion.div>
         </AnimatePresence>
-
-        <ProgressBar
-          total={questions.length}
-          current={currentIndex}
-          onSelect={handleSelect}
-      />
 
     </div>
   );

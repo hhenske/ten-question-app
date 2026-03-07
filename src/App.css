@@ -2,7 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .logo {
@@ -41,35 +41,26 @@
   color: #888;
 }
 
-.progress {
+
+.nav-buttons{
   display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 24px;
+  justify-content: flex-start;
+  margin-top: 20px;
 }
 
-.progress__step {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
+.back-button{
+  background: transparent;
   border: none;
-  background: #ddd;
-  font-weight: 600;
+  font-size: 16px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  color: #1976d2;
+  font-weight: 500;
 }
 
-.progress__step:hover {
-  transform: scale(1.1);
-}
-
-.progress__step.complete {
-  background: #4caf50;
-  color: white;
-}
-
-.progress__step.active {
-  background: #1976d2;
-  color: white;
+.back-button:hover{
+  font-weight: 700;
+  border: none!important;
+  background: transparent!important;
+  box-shadow: none!important;
 }
 

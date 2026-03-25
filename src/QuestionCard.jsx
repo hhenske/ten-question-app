@@ -43,7 +43,7 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
 
     setTimeout(() => {
       onNext(index, "yes");
-    }, 3200);
+    }, 1600);
   }
 
   function handleNotSure() {
@@ -92,7 +92,7 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
     <div className="card">
 
       <h2>
-        {yesChecked ? data.statement : data.question}
+        {data.question}
       </h2>
 
       {!yesChecked && data.consider && (
@@ -191,7 +191,7 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
             checked={yesChecked}
             onChange={handleYes}
           />
-          Yes
+          {data.statement}
         </label>
 
         <label>

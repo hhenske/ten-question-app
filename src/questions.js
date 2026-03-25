@@ -10,7 +10,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, the Scriptures are true. There is compelling evidence: logical, archaeological, and historical.",
+      "Yes, the Scriptures are true.",
 
     tabs: {
       logical: {
@@ -76,7 +76,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, the words of Jesus are true because he claimed divine authority and his life and resurrection were historically confirmed.",
+      "Yes, the words of Jesus are true.",
 
     tabs: {
       biblical: {
@@ -168,7 +168,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, Jesus saves because God loves us.",
+      "Yes, God sent Jesus to save us because he loves us.",
 
     verses: [
       
@@ -203,7 +203,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, the Scriptures sayJesus saved us by dying for our sins on the cross.",
+      "Yes, the Scriptures say Jesus saved us by dying for our sins.",
 
     verses: [
       {
@@ -237,7 +237,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, the Scriptures say we are saved so we can have eternal life with God",
+      "Yes, the Scriptures say we are saved to have eternal life with God",
 
     verses: [
       {
@@ -271,7 +271,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, the Scriptures say Jesus 'came to seek and save that which is lost' from the wrath of God and spiritual death.",
+      "Yes, Scripture says Jesus the lost from the wrath of God and spiritual death.",
 
     verses: [
       {
@@ -310,7 +310,7 @@ export const questions = [
       },
 
       statement:
-        "Yes, scriptures say that the lost include all of us.",
+        "Yes, Scripture says that 'the lost' includes all of us.",
       
       verses: [
         {
@@ -349,7 +349,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, I believe Jesus came to save me personally.",
+      "Yes, I believe Jesus came to save me.",
 
     verses: [
       {
@@ -404,30 +404,3 @@ export const questions = [
     ]
   }
 ];
-
-
-// question:
-//       "#9 Do you need salvation through Jesus?",
-
-//     consider: {
-//       reference: "Romans 3:23",
-//       text:
-//         "All have sinned and fall short of the glory of God."
-//     },
-
-//     statement:
-//       "Yes, I recognize my need for salvation through Jesus.",
-
-//     verses: [
-//       {
-//         reference: "1 John 1:8",
-//         text:
-//           "If we claim to be without sin, we deceive ourselves."
-//       },
-//       {
-//         reference: "Romans 6:23",
-//         text:
-//           "The gift of God is eternal life in Christ Jesus."
-//       }
-//     ]
-//   },

@@ -84,9 +84,9 @@ export const questions = [
 
         verses: [
           {
-            reference: "John 14:6",
+            reference: "John 14:10",
             text:
-              "I am the way, and the truth, and the life."
+              "Do you not believe that I am in the Father and the Father is in me? The words that I say to you I do not speak on my own authority, but the Father who dwells in me does his works. "
           },
           {
             reference: "John 18:37",
@@ -125,7 +125,7 @@ export const questions = [
   {
     id: 3,
 
-    question: "#3 Do you believe Jesus came to seek and save the lost?",
+    question: "#3 Do you believe Jesus came to 'seek and save that which was lost?",
 
     consider: {
       reference: "Luke 19:10",
@@ -134,23 +134,23 @@ export const questions = [
     },
 
     statement:
-      "Yes, Jesus said that he came to seek and save the lost.",
+      "Yes, Jesus said that he came to 'seek and save the lost.'",
 
     verses: [
       {
-        reference: "Luke 19:10",
+        reference: "Matthew 18:12-14",
         text:
-          "For the Son of Man came to seek and to save the lost."
-      },
-      {
-        reference: "John 3:17",
-        text:
-          "God did not send his Son into the world to condemn the world, but to save the world through him."
+          "What do you think? If a man has a hundred sheep, and one of them has gone astray, does he not leave the ninety-nine on the mountains and go in search of the one that went astray? And if he finds it, truly, I say to you, he rejoices over it more than over the ninety-nine that never went astray.  So it is not the will of my Father who is in heaven that one of these little ones should perish"
       },
       {
         reference: "1 Thessalonians 5:9",
         text:
           "God has not destined us for wrath, but to obtain salvation through our Lord Jesus Christ."
+      },
+      {
+        reference: "Isaiah 53:6",
+        text:
+          "We all, like sheep, have gone astray, each of us has turned to our own way; and the Lord has laid on him the iniquity of us all."
       }
     ]
   },
@@ -159,23 +159,19 @@ export const questions = [
     id: 4,
 
     question:
-      "#4 Did Jesus say why He came to seek and save the lost?",
+      "#4 Did Jesus say WHY He came to 'seek and save the lost?'",
 
     consider: {
-      reference: "John 3:16",
+      reference: "John 3:16-17",
       text:
-        "For God so loved the world that He gave His only Son."
+        "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him."
     },
 
     statement:
-      "Yes, Jesus saves because God loves us and sent him to seek and save us.",
+      "Yes, Jesus saves because God loves us.",
 
     verses: [
-      {
-        reference: "John 3:16-17",
-        text:
-          "Whoever believes in Him shall not perish but have eternal life."
-      },
+      
       {
         reference: "Romans 5:8",
         text:
@@ -185,6 +181,11 @@ export const questions = [
         reference: "Ephesians 2:4-5",
         text:
           "Because of His great love, God made us alive with Christ."
+      },
+      {
+        reference: "Ephesians 1:3-10",
+        text:
+          "Praise be to the God and Father of our Lord Jesus Christ, who has blessed us in the heavenly realms with every spiritual blessing in Christ. For he chose us in him before the creation of the world to be holy and blameless in his sight. In love he predestined us for adoption to sonship through Jesus Christ, in accordance with his pleasure and will— to the praise of his glorious grace, which he has freely given us in the One he loves. In him we have redemption through his blood, the forgiveness of sins, in accordance with the riches of God’s grace that he lavished on us. With all wisdom and understanding, he made known to us the mystery of his will according to his good pleasure, which he purposed in Christ,  to be put into effect when the times reach their fulfillment—to bring unity to all things in heaven and on earth under Christ."
       }
     ]
   },
@@ -236,7 +237,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, the scriptures say we are saved so we can have eternal life with God",
+      "Yes, the Scriptures say we are saved so we can have eternal life with God",
 
     verses: [
       {
@@ -351,6 +352,11 @@ export const questions = [
       "Yes, I believe Jesus came to save me personally.",
 
     verses: [
+      {
+        reference: "1 John 1:8",
+        text:
+          "If we say we have no sin, we deceive ourselves, and the truth is not in us."
+      },
       {
         reference: "Revelation 3:20",
         text:

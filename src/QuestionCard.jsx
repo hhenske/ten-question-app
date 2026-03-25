@@ -40,7 +40,7 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
 
     setTimeout(() => {
       onNext(index, "yes");
-    }, 1200);
+    }, 3200);
   }
 
   function handleNotSure() {

@@ -7,6 +7,7 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
   const [selected, setSelected] = useState(answer ?? null);
   const [yesChecked, setYesChecked] = useState(answer === "yes");
   const [notSureChecked, setNotSureChecked] = useState(answer === "not_sure");
+  const [noChecked, setNoChecked] = useState(answer === "no");
   const [expanded, setExpanded] = useState(false);
   const [showStillNotSure, setShowStillNotSure] = useState(false);
   const [activeTab, setActiveTab] = useState(null);
@@ -16,11 +17,13 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
     setSelected(answer ?? null);
     setYesChecked(answer === "yes");
     setNotSureChecked(answer === "not_sure");
+    setNoChecked(answer === "no");
   }, [answer]);
 
   useEffect(() => {
     setExpanded(false);
     setShowStillNotSure(false);
+    setNoChecked(false);
 
     if (data.tabs) {
       setActiveTab(Object.keys(data.tabs)[0]);
@@ -58,6 +61,15 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
     setSelected("not_sure");
 
     onNext(index, "not_sure");
+  }
+
+  function handleNo() {
+    setYesChecked(false);
+    setNotSureChecked(false);
+    setNoChecked(true);
+    setSelected("no");
+    
+    onNext(index, "no");
   }
 
   function handleConsiderClick() {
@@ -190,6 +202,18 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
           />
           {showStillNotSure ? "Still Not Sure" : "Not Sure"}
         </label>
+
+        {showStillNotSure && (
+          <label>
+            <input
+              type="checkbox"
+              checked={noChecked}
+              onChange={handleNo}
+            />
+            No
+          </label>
+        )}
+
 
       </div>
 

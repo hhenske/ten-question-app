@@ -76,6 +76,8 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
     setExpanded(true);
     setNotSureChecked(true);
     setYesChecked(false);
+
+    setShowStillNotSure(true);
   }
 
   function handleClose() {

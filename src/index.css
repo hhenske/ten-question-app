@@ -178,7 +178,7 @@ a:hover {
   margin-top: 32px;
   display: flex;
   flex-wrap: wrap;          /* allow wrapping */
-  gap: 15px;                /* your spacing */
+  gap: 20px;                /* your spacing */
   font-size: 20px;
   font-weight: bold;
   justify-content: space-around; /* distribute evenly */

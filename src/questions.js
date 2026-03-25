@@ -10,7 +10,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, I believe the Scriptures are true because there is compelling evidence: logical, archaeological, and historical.",
+      "Yes, the Scriptures are true. There is compelling evidence: logical, archaeological, and historical.",
 
     tabs: {
       logical: {
@@ -76,7 +76,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, I believe the words of Jesus are true because He claimed divine authority and His life and resurrection were historically confirmed.",
+      "Yes, the words of Jesus are true because he claimed divine authority and his life and resurrection were historically confirmed.",
 
     tabs: {
       biblical: {
@@ -134,7 +134,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, I believe Jesus came to seek and save the lost because that's what he said.",
+      "Yes, Jesus said that he came to seek and save the lost.",
 
     verses: [
       {
@@ -168,7 +168,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, I believe Jesus saves because God loves us and sent Him for that purpose.",
+      "Yes, Jesus saves because God loves us and sent him to seek and save us.",
 
     verses: [
       {
@@ -202,7 +202,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, I believe the scriptures sayJesus saved us by dying for our sins on the cross.",
+      "Yes, the Scriptures sayJesus saved us by dying for our sins on the cross.",
 
     verses: [
       {
@@ -227,7 +227,7 @@ export const questions = [
     id: 6,
 
     question:
-      "#6 Do the Scriptures say what Jesus saves us from?",
+      "#6 Do the Scriptures say what Jesus saves us for?",
 
     consider: {
       reference: "John 3:36",
@@ -236,18 +236,23 @@ export const questions = [
     },
 
     statement:
-      "Yes, I believe the scriptures say we are saved from sin, wrath, and spiritual death.",
+      "Yes, the scriptures say we are saved so we can have eternal life with God",
 
     verses: [
       {
-        reference: "Romans 6:23",
-        text:
-          "The wages of sin is death, but the gift of God is eternal life."
-      },
-      {
         reference: "1 John 1:9",
         text:
-          "If we confess our sins, He forgives us."
+          "If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
+      },
+      {
+        reference: "Romans 3: 23-25",
+        text:
+          "for all have sinned and fall short of the glory of God, and all are justified freely by his grace through the redemption that came by Christ Jesus. God presented Christ as a sacrifice of atonement, through the shedding of his blood—to be received by faith. "
+      },
+      {
+        reference: "Romans 6:23",
+        text:
+          "For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord."
       }
     ]
   },
@@ -256,27 +261,37 @@ export const questions = [
     id: 7,
 
     question:
-      "#7 Do the Scriptures explain who the lost are?",
+      "#7 Did the Scriptures say what Jesus saves us from?",
 
     consider: {
-      reference: "Isaiah 53:6",
+      reference: "John 3:36",
       text:
-        "We all, like sheep, have gone astray."
+        "Whoever believes in the Son has eternal life; whoever does not obey the Son shall not see life, but the wrath of God remains on him."
     },
 
     statement:
-      "Yes, I believe the scriptures explain that all people are lost and in need of salvation.",
+      "Yes, the Scriptures say Jesus 'came to seek and save that which is lost' from the wrath of God and spiritual death.",
 
     verses: [
       {
-        reference: "Romans 3:11",
+        reference: "Romans 6:23",
         text:
-          "There is no one righteous, not even one."
+          "For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. "
       },
       {
-        reference: "Matthew 9:36",
+        reference: "1 John 1:9",
         text:
-          "They were harassed and helpless, like sheep without a shepherd."
+          "If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
+      },
+      {
+        reference: "Ephesians 4:18",
+        text:
+          "They are darkened in their understanding, alienated from the life of God because of the ignorance that is in them, due to their hardness of heart."
+      },
+      {
+        reference: "Isaiah 59:2",
+        text:
+          "But your iniquities have made a separation between you and your God, and your sins have hidden his face from you so that he does not hear."
       }
     ]
   },
@@ -285,7 +300,46 @@ export const questions = [
     id: 8,
 
     question:
-      "#8 Do you believe Jesus came to save you personally?",
+      "#8 Does Scripture explain who the lost are that Jesus 'came to seek and save'?",
+    
+      consider: {
+        reference: "Romans 3:23-25",
+        text:
+          "For all have sinned and fall short of the glory of God, and all are justified freely by his grace through the redemption that came by Christ Jesus."
+      },
+
+      statement:
+        "Yes, scriptures say that the lost include all of us.",
+      
+      verses: [
+        {
+          reference:
+            "Matthew 9:36",
+          text:
+            "When he [Jesus] saw the crowds, he had compassion on them, because they were harassed and helpless, like sheep without a shepherd."
+        },
+        {
+          reference:
+            "Isaiah 53:6",
+          text:
+            "We all, like sheep, have gone astray, each of us has turned to our own way; and the Lord has laid on him the iniquity of us all."
+        },
+        {
+          reference:
+            "2 Timothy: 2;1-6",
+          text:
+            "For there is one God, and there is one mediator between God and men, the man Christ Jesus, who gave himself as a ransom for all, which is the testimony given at the proper time."
+
+        }
+      ]
+  },
+    
+
+  {
+    id: 9,
+
+    question:
+      "#9 Do you believe Jesus came to save you personally?",
 
     consider: {
       reference: "2 Peter 3:9",
@@ -310,34 +364,6 @@ export const questions = [
     ]
   },
 
-  {
-    id: 9,
-
-    question:
-      "#9 Do you need salvation through Jesus?",
-
-    consider: {
-      reference: "Romans 3:23",
-      text:
-        "All have sinned and fall short of the glory of God."
-    },
-
-    statement:
-      "Yes, I recognize my need for salvation through Jesus.",
-
-    verses: [
-      {
-        reference: "1 John 1:8",
-        text:
-          "If we claim to be without sin, we deceive ourselves."
-      },
-      {
-        reference: "Romans 6:23",
-        text:
-          "The gift of God is eternal life in Christ Jesus."
-      }
-    ]
-  },
 
   {
     id: 10,
@@ -348,12 +374,11 @@ export const questions = [
     consider: {
       reference: "Acts 2:38",
       text:
-        "Repent and be baptized in the name of Jesus Christ."
+        "And Peter said to them, 'Repent and be baptized every one of you in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit.'"
     },
 
     statement:
-      "Yes, I am ready to follow Jesus.",
-
+      "Yes, I am ready to say yes to Jesus!",
     verses: [
       {
         reference: "Romans 10:9",
@@ -361,10 +386,42 @@ export const questions = [
           "If you confess with your mouth that Jesus is Lord, you will be saved."
       },
       {
-        reference: "Ephesians 2:8",
+        reference: "3 Peter:9",
         text:
-          "By grace you have been saved through faith."
+          "The Lord is not slow to fulfill his promise as some count slowness, but is patient toward you, not wishing that any should perish, but that all should reach repentance."
+      },
+      {
+        reference: "Mark 16:16",
+        text:
+          "Whoever believes and is baptized will be saved, but whoever does not believe will be condemned. "
       }
     ]
   }
 ];
+
+
+// question:
+//       "#9 Do you need salvation through Jesus?",
+
+//     consider: {
+//       reference: "Romans 3:23",
+//       text:
+//         "All have sinned and fall short of the glory of God."
+//     },
+
+//     statement:
+//       "Yes, I recognize my need for salvation through Jesus.",
+
+//     verses: [
+//       {
+//         reference: "1 John 1:8",
+//         text:
+//           "If we claim to be without sin, we deceive ourselves."
+//       },
+//       {
+//         reference: "Romans 6:23",
+//         text:
+//           "The gift of God is eternal life in Christ Jesus."
+//       }
+//     ]
+//   },

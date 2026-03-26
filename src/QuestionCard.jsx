@@ -11,6 +11,7 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
   const [expanded, setExpanded] = useState(false);
   const [showStillNotSure, setShowStillNotSure] = useState(false);
   const [activeTab, setActiveTab] = useState(null);
+  const [resourceModal, setResourceModal] = useState(null);
 
 
   useEffect(() => {
@@ -90,6 +91,14 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
     }
   }
 
+  function openResource(link) {
+    setResourceModal(link);
+  }
+
+  function closeResource() {
+    setResourceModal(null);
+  }
+
   return (
     <div className="card">
 
@@ -166,6 +175,17 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
                       <strong>{verse.reference}</strong> — {verse.text}
                     </p>
                   ))}
+                  {data.tabs[activeTab]?.links?.map((link, i) => (
+                    <p key={i}>
+                      <button
+                        className="resource-link"
+                        onClick={() => openResource(link)}
+                      >
+                        {link.label}
+                      </button>
+                    </p>
+                  ))}
+
                 </div>
               </>
             )}
@@ -184,6 +204,56 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Resource Modal */}
+      <AnimatePresence>
+        {resourceModal && (
+          <motion.div
+            className="resource-modal-overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <motion.div
+              className="resource-modal"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+            >
+
+              <button
+                className="modal-close"
+                onClick={closeResource}
+              >
+                ✕
+              </button>
+
+              {resourceModal.type === "video" ? (
+                <iframe
+                  src={resourceModal.url.replace("watch?v=", "embed/")}
+                  title="Video"
+                  width="100%"
+                  height="200"
+                  allowFullScreen
+                />
+              ) : (
+                <>
+                  <p>Preview not available.</p>
+                  <a
+                    href={resourceModal.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Open article →
+                  </a>
+                </>
+              )}
+
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
 
       <div className="checkboxes">
 

@@ -60,6 +60,46 @@ export const questions = [
               "The grass withers, the flower fades, but the word of our God will stand forever."
           }
         ]
+      },
+      resources: {
+        title: "Resource Links",
+        links: [
+          {
+            label: "Are the Gospels Reliable History?",
+            url: "https://www.str.org/w/three-pieces-of-evidence-that-corroborate-the-gospels",
+            type: "video"
+          },
+          {
+            label: "6 Times the Bible Gives Evidence of its Authenticity",
+            url: "https://www.biblestudytools.com/slideshows/6-times-the-bible-gives-evidence-of-its-authenticity.html",
+            type: "article"
+          },
+          {
+            label: "Tim Keller: Why is the Bible reliable?",
+            url: "https://www.youtube.com/watch?v=UZAPFKXMy_Y",
+            type: "video"
+          },
+          {
+            label: "The Reason for God: Belief in an Age of Skepticism",
+            url: "https://www.amazon.com/Reason-God-Belief-Age-Skepticism/dp/1594483493",
+            type: "article"
+          },
+          {
+            label: "Is the Bible reliable? (gotquestions.org)",
+            url: "https://www.gotquestions.org/Bible-reliable.html",
+            type: "article"
+          },
+          {
+            label: "Why Don't You Use The King James Version?",
+            url: "https://www.wisdomonline.org/blog/king-james-version/?srsltid=AfmBOorgQTeL_MQwrePV2bJyqpfUqQOI2TOvI2LEK_ZI8aELBwWN8N6R&_tag_jsr=1",
+            type: "article"
+          },
+          {
+            label:"Questioning Christianity Ep 1: Faith & Proof - Timothy Keller",
+            url: "https://www.youtube.com/watch?v=qOE6jJ4EGqg",
+            type: "video"
+          }
+        ]
       }
     }
   },

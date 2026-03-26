@@ -10,27 +10,23 @@ export const questions = [
     },
 
     statement:
-      "Yes, the Scriptures are true.",
+      "Yes, I believe the Scriptures are true.",
 
     tabs: {
       logical: {
         title: "Logical Evidence",
 
         points: [
-          "Skepticism toward Gospel miracles often stems from philosophical materialism, which rejects the supernatural from the start despite being internally inconsistent.",
-          "The disciples’ sincerity is evidenced by their suffering and martyrdom, making deliberate deception unlikely.",
-          "Multiple non-Christian ancient sources corroborate New Testament people, places, and events.",
-          "Extensive manuscript evidence shows the Bible’s transmission was highly accurate."
+          "Ancient non-Christian sources also mention the people, places, and events found in the New Testament. This outside evidence supports the main claims about Jesus and the early Christian movement. ",
+          "While some people may disagree, there is strong manuscript evidence and careful copying that show the Bible was passed down accurately. Most differences are minor and have been well documented.",
+          "Many people are skeptical about miracles and supernatural events in the Gospels. The disciples showed their sincerity by being honest about themselves, accepting suffering, and even facing death. This makes it unlikely they were trying to mislead anyone in the New Testament.",
         ],
 
         links: [
           {
-            label: "Bible Reliability – Jesus Answers",
-            url: "https://jesusanswers.org/apologetics-tough-questions/bible-reliability/"
-          },
-          {
-            label: "Non-Christian Sources Supporting the Bible",
-            url: "https://www.kimberleypayne.com/non-christian-sources-that-support-the-bible/"
+            label: "From the CS Lewis Institute",
+            url: "https://www.cslewisinstitute.org/resources/are-biblical-manuscripts-reliable/",
+            type: "article"
           }
         ]
       },
@@ -116,7 +112,7 @@ export const questions = [
     },
 
     statement:
-      "Yes, the words of Jesus are true.",
+      "Yes, I believe Jesus told the truth.",
 
     tabs: {
       biblical: {
@@ -145,17 +141,35 @@ export const questions = [
         title: "Historical Evidence",
 
         points: [
-          "Ignatius of Antioch confirmed Jesus was crucified under Pontius Pilate.",
-          "Papias learned Jesus’ teachings from eyewitnesses.",
-          "Thallus recorded darkness at the crucifixion.",
-          "Josephus confirmed Jesus was a real historical figure.",
-          "Pliny the Younger confirmed early Christians worshiped Jesus as divine."
+          "Ignatius of Antioch wrote a letter to the Smyrnaeans (ca. AD 110) in which he claims that Jesus was crucified under Pontius Pilate and Herod the tetrarch and that “he suffered all these things for us; and He suffered them really, and not in appearance only, even as also He truly rose again",
+          "Papius (ca. AD 5-110) wrote that he learned Jesus' teachings from those who had heard him in person.",
+          "Phlegon (ca. AD 140) reported that Jesus had knowledge of future events and testified that the result corresponded to his predictions.",
+          "TThallus (ca. AD 55), one of the earliest non-Christian writers to refer to Jesus, reported the supernatural darkness that accompanied the crucifixion of Jesus.",
+          "Josephus (ca. AD 93) wrote, “And in this time, there was a certain Jesus, a wise man, if indeed one ought to call him a man, for he was a doer of incredible deeds, a teacher of men who receive truisms with pleasure. And he brought over many from among the Jews and many from among the Greeks. He was [thought to be] the Christ. And, when Pilate had condemned him to the cross at the accusation of the first men among us, those who at first were devoted to him did not cease to be so, for on the third day it seemed to them that he was alive again given that the divine prophets had spoken such things and thousands of other wonderful things about him. And up till now, the tribe of Christians, who were named from him, has not disappeared.",
+          "Pliny the Younger (ca. AD 122) confirmed, in a letter to Trajan, not only that Christ was a real, historical figure, but also that Christians at that time believed in the divinity of Jesus and were meeting weekly to worship him."
         ],
 
         links: [
           {
-            label: "Bible Archaeology Report",
-            url: "https://biblearchaeologyreport.com/"
+            label: "From Top Ten Historical References to Jesus Outside of the Bible",
+            url: "https://biblearchaeologyreport.com/2022/11/18/top-ten-historical-references-to-jesus-outside-of-the-bible/",
+            type: "article"
+          }
+        ]
+      },
+
+      resources: {
+        title: "Resource Links",
+        links: [
+          {
+            label: "The Case for Christ by Lee Strobel",
+            url: "https://www.amazon.com/Case-Christ-Journalists-Personal-Investigation/dp/0310209307",
+            type: "article"
+          },
+          {
+            label: "Questioning Christianity - Why We Can Believe in Jesus (Tim Keller)",
+            url: "https://www.youtube.com/watch?v=7Hf7vdpv_Wc",
+            type: "video"
           }
         ]
       }
@@ -165,7 +179,7 @@ export const questions = [
   {
     id: 3,
 
-    question: "#3 Do you believe Jesus came to 'seek and save that which was lost?",
+    question: "#3 Do you believe Jesus came to 'seek and save that which was lost?'",
 
     consider: {
       reference: "Luke 19:10",
@@ -176,23 +190,40 @@ export const questions = [
     statement:
       "Yes, Jesus said that he came to 'seek and save the lost.'",
 
-    verses: [
-      {
-        reference: "Matthew 18:12-14",
-        text:
-          "What do you think? If a man has a hundred sheep, and one of them has gone astray, does he not leave the ninety-nine on the mountains and go in search of the one that went astray? And if he finds it, truly, I say to you, he rejoices over it more than over the ninety-nine that never went astray.  So it is not the will of my Father who is in heaven that one of these little ones should perish"
+    tabs: {
+      biblical: {
+        title: "Biblical Evidence",
+
+        verses: [
+          {
+            reference: "Matthew 18:12-14",
+            text:
+              "What do you think? If a man has a hundred sheep, and one of them has gone astray, does he not leave the ninety-nine on the mountains and go in search of the one that went astray? And if he finds it, truly, I say to you, he rejoices over it more than over the ninety-nine that never went astray.  So it is not the will of my Father who is in heaven that one of these little ones should perish"
+          },
+          {
+            reference: "1 Thessalonians 5:9",
+            text:
+              "God has not destined us for wrath, but to obtain salvation through our Lord Jesus Christ."
+          },
+          {
+            reference: "Isaiah 53:6",
+            text:
+              "We all, like sheep, have gone astray, each of us has turned to our own way; and the Lord has laid on him the iniquity of us all."
+          }
+        ]
       },
-      {
-        reference: "1 Thessalonians 5:9",
-        text:
-          "God has not destined us for wrath, but to obtain salvation through our Lord Jesus Christ."
-      },
-      {
-        reference: "Isaiah 53:6",
-        text:
-          "We all, like sheep, have gone astray, each of us has turned to our own way; and the Lord has laid on him the iniquity of us all."
+
+      resources: {
+        title: "Resource Links",
+        links: [  
+          {
+            label: "With the Powerful: The Real Jesus (Audio sermon by Tim Keller)",
+            url: "https://gospelinlife.com/sermon/with-the-powerful/",
+            type: "article"
+          }
+        ]
       }
-    ]
+    }
   },
 
   {

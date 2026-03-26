@@ -99,6 +99,15 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
     setResourceModal(null);
   }
 
+  useEffect(() => {
+    if (resourceModal) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+  }, [resourceModal]);
+
+
   return (
     <div className="card">
 
@@ -228,14 +237,29 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
                 ✕
               </button>
 
+              <h3>{resourceModal.label}</h3>
+
+
               {resourceModal.type === "video" ? (
+                <>
                 <iframe
                   src={resourceModal.url.replace("watch?v=", "embed/")}
                   title="Video"
                   width="100%"
-                  height="200"
+                  height="400"
                   allowFullScreen
                 />
+
+                <a
+                  href={resourceModal.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="resource-fallback"
+                >
+                  Open video →
+                </a>
+              </>
+
               ) : (
                 <>
                   <p>Preview not available.</p>

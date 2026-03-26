@@ -1,3 +1,5 @@
+import { label } from "framer-motion/client";
+
 export const questions = [
   {
     id: 1,
@@ -11,6 +13,9 @@ export const questions = [
 
     statement:
       "Yes, I believe the Scriptures are true.",
+    
+    explanation:
+      "Biblical, archeological, and logical evidence exists to support the truth of scriptures.",
 
     tabs: {
       logical: {
@@ -114,6 +119,9 @@ export const questions = [
     statement:
       "Yes, I believe Jesus told the truth.",
 
+    explanation:
+      "Jesus claims to speak from God's authority.",
+
     tabs: {
       biblical: {
         title: "Biblical Evidence",
@@ -190,6 +198,9 @@ export const questions = [
     statement:
       "Yes, Jesus said that he came to 'seek and save the lost.'",
 
+    explanation:
+      "God seeks those who are lost.",
+
     tabs: {
       biblical: {
         title: "Biblical Evidence",
@@ -239,33 +250,57 @@ export const questions = [
     },
 
     statement:
-      "Yes, God sent Jesus to save us because he loves us.",
+      "Yes, because God loves the lost.",
 
-    verses: [
-      
-      {
-        reference: "Romans 5:8",
-        text:
-          "God demonstrates His love for us in this: while we were still sinners, Christ died for us."
-      },
-      {
-        reference: "Ephesians 2:4-5",
-        text:
-          "Because of His great love, God made us alive with Christ."
-      },
-      {
-        reference: "Ephesians 1:3-10",
-        text:
-          "Praise be to the God and Father of our Lord Jesus Christ, who has blessed us in the heavenly realms with every spiritual blessing in Christ. For he chose us in him before the creation of the world to be holy and blameless in his sight. In love he predestined us for adoption to sonship through Jesus Christ, in accordance with his pleasure and will— to the praise of his glorious grace, which he has freely given us in the One he loves. In him we have redemption through his blood, the forgiveness of sins, in accordance with the riches of God’s grace that he lavished on us. With all wisdom and understanding, he made known to us the mystery of his will according to his good pleasure, which he purposed in Christ,  to be put into effect when the times reach their fulfillment—to bring unity to all things in heaven and on earth under Christ."
-      }
+    explanation:
+      "God demonstrates his love for us.",
+
+    tabs: {
+      biblical: {
+        title: "Biblical Evidence",
+
+        verses: [
+          
+          {
+            reference: "Romans 5:8",
+            text:
+              "God demonstrates His love for us in this: while we were still sinners, Christ died for us."
+          },
+          {
+            reference: "Ephesians 2:4-5",
+            text:
+              "Because of His great love, God made us alive with Christ."
+          },
+          {
+            reference: "Ephesians 1:3-10",
+            text:
+              "Praise be to the God and Father of our Lord Jesus Christ, who has blessed us in the heavenly realms with every spiritual blessing in Christ. For he chose us in him before the creation of the world to be holy and blameless in his sight. In love he predestined us for adoption to sonship through Jesus Christ, in accordance with his pleasure and will— to the praise of his glorious grace, which he has freely given us in the One he loves. In him we have redemption through his blood, the forgiveness of sins, in accordance with the riches of God’s grace that he lavished on us. With all wisdom and understanding, he made known to us the mystery of his will according to his good pleasure, which he purposed in Christ,  to be put into effect when the times reach their fulfillment—to bring unity to all things in heaven and on earth under Christ."
+          }
     ]
   },
+  resources: {
+    title: "Resource Links",
+    links: [  
+      {
+        label: "The Gospel by BibleProject.com",
+        url: "https://bibleproject.com/videos/how-to-read-gospel/",
+        type: "article"
+      },
+      {
+        label: "'Salvation' Tim Keller Sermon",
+        url: "https://podcast.gospelinlife.com/e/salvation-1623793244/",
+        type: "video"
+      }
+    ]
+  }
+}
+},
 
   {
     id: 5,
 
     question:
-      "#5 Do the Scriptures say how Jesus would save the lost?",
+      "#5 Do the Scriptures say HOW Jesus would save the lost?",
 
     consider: {
       reference: "1 Peter 2:24",
@@ -274,32 +309,60 @@ export const questions = [
     },
 
     statement:
-      "Yes, the Scriptures say Jesus saved us by dying for our sins.",
+      "Yes, by dying on the cross for the forgiveness of their sins.",
 
-    verses: [
-      {
-        reference: "1 Peter 2:24",
-        text:
-          "By His wounds you have been healed."
+    explanation:
+      "Jesis explains that he must die and rise again for salvation.",
+
+    tabs: {
+      biblical: {
+        title: "Biblical Evidence",
+        verses: [
+          {
+            reference: "1 Peter 2:24",
+            text:
+              "By His wounds you have been healed."
+          },
+          {
+            reference: "Hebrews 9:22",
+            text:
+              "Without the shedding of blood there is no forgiveness."
+          },
+          {
+            reference: "Romans 3:24",
+            text:
+              "We are justified freely by His grace."
+          }
+        ]
       },
-      {
-        reference: "Hebrews 9:22",
-        text:
-          "Without the shedding of blood there is no forgiveness."
-      },
-      {
-        reference: "Romans 3:24",
-        text:
-          "We are justified freely by His grace."
+      resources: {
+        title: "Resource Links",
+        links: [
+          {
+          label: "Why Did Jesus Have to Die? (from GotQuestions.org)",
+          url: "https://www.gotquestions.org/why-Jesus-die.html",
+          type: "article"
+          },
+          {
+            label: "Why Did Jesus Have to Die? (from BibleProject)",
+            url: "https://bibleproject.com/articles/why-did-jesus-have-to-die-a-question-worth-unpacking/",
+            type: "article"
+          },
+          {
+            label: "The Crucifixion (Tim Keller Sermon)",
+            url: "https://podcast.gospelinlife.com/e/the-cross-and-salvation-1623793244/",
+            type: "video"
+          }
+        ]
       }
-    ]
+    }
   },
 
   {
     id: 6,
 
     question:
-      "#6 Do the Scriptures say what Jesus saves us for?",
+      "#6 Do the Scriptures say what Jesus saves us FOR?",
 
     consider: {
       reference: "John 3:36",
@@ -308,32 +371,55 @@ export const questions = [
     },
 
     statement:
-      "Yes, the Scriptures say we are saved to have eternal life with God",
+      "Yes, so they can have eternal life with God",
 
-    verses: [
-      {
-        reference: "1 John 1:9",
-        text:
-          "If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
+    explanation:
+      "God saves that which is lost by cleansing, justifying, and reconciling them to Himself through Jesus.",
+
+    tabs: {
+      biblical: {
+        title: "Biblical Evidence",                                                           
+        verses: [
+          {
+            reference: "1 John 1:9",
+            text:
+              "If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
+          },
+          {
+            reference: "Romans 3: 23-25",
+            text:
+              "for all have sinned and fall short of the glory of God, and all are justified freely by his grace through the redemption that came by Christ Jesus. God presented Christ as a sacrifice of atonement, through the shedding of his blood—to be received by faith. "
+          },
+          {
+            reference: "Romans 6:23",
+            text:
+              "For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord."
+          }
+        ]
       },
-      {
-        reference: "Romans 3: 23-25",
-        text:
-          "for all have sinned and fall short of the glory of God, and all are justified freely by his grace through the redemption that came by Christ Jesus. God presented Christ as a sacrifice of atonement, through the shedding of his blood—to be received by faith. "
-      },
-      {
-        reference: "Romans 6:23",
-        text:
-          "For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord."
+      resources: {
+        title: "Resource Links",
+        links: [
+          {
+            label: "Heaven (Audio sermon by Tim Keller)",
+            url: "https://gospelinlife.com/sermon/heaven/",
+            type: "article"
+          },
+          {
+            label: "What are the NEw Heavens and New Earth? (from GotQuestions.org)",
+            url: "https://www.gotquestions.org/new-heavens-earth.html",
+            type: "article"
+          }
+        ]
       }
-    ]
+    }
   },
 
   {
     id: 7,
 
     question:
-      "#7 Did the Scriptures say what Jesus saves us from?",
+      "#7 Did the Scriptures say what Jesus saves us FROM?",
 
     consider: {
       reference: "John 3:36",
@@ -342,37 +428,66 @@ export const questions = [
     },
 
     statement:
-      "Yes, Scripture says Jesus the lost from the wrath of God and spiritual death.",
+      "Yes, Scripture the lost are saved from the wrath of God and spiritual death.",
 
-    verses: [
-      {
-        reference: "Romans 6:23",
-        text:
-          "For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. "
-      },
-      {
-        reference: "1 John 1:9",
-        text:
-          "If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
-      },
-      {
-        reference: "Ephesians 4:18",
-        text:
-          "They are darkened in their understanding, alienated from the life of God because of the ignorance that is in them, due to their hardness of heart."
-      },
-      {
-        reference: "Isaiah 59:2",
-        text:
-          "But your iniquities have made a separation between you and your God, and your sins have hidden his face from you so that he does not hear."
-      }
-    ]
+    explanation:
+      "Scripture says sin leads to spiritual death, unrighteousness, and separation from God.",
+    
+    tabs: {
+      biblical: {
+        title: "Biblical Evidence",
+
+          verses: [
+            {
+              reference: "Romans 6:23",
+              text:
+                "For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord. "
+            },
+            {
+              reference: "1 John 1:9",
+              text:
+                "If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
+            },
+            {
+              reference: "Ephesians 4:18",
+              text:
+                "They are darkened in their understanding, alienated from the life of God because of the ignorance that is in them, due to their hardness of heart."
+            },
+            {
+              reference: "Isaiah 59:2",
+              text:
+                "But your iniquities have made a separation between you and your God, and your sins have hidden his face from you so that he does not hear."
+            }
+          ]
+        },
+        resources: {
+          title: "Resource Links",
+          links: [
+            {
+              label: "Don't Miss the Point of God's Anger (BibleProject)",
+              url: "https://www.youtube.com/watch?v=TeQ1nq_YJD0",
+              type: "video"
+            },
+            {
+              label: "Wrath Is Not an Attribute of God",
+              url: "https://www.thegospelcoalition.org/article/wrath-not-attribute-god/",
+              type: "article"
+            },
+            {
+              label: "Hell (Audio sermon by Tim Keller)",
+              url: "https://gospelinlife.com/sermon/hell/",
+              type: "article"
+            }
+          ]
+        }
+    }
   },
 
   {
     id: 8,
 
     question:
-      "#8 Does Scripture explain who the lost are that Jesus 'came to seek and save'?",
+      "#8 Does Scripture explain WHO the lost are that Jesus 'came to seek and save'?",
     
       consider: {
         reference: "Romans 3:23-25",
@@ -381,7 +496,10 @@ export const questions = [
       },
 
       statement:
-        "Yes, Scripture says that 'the lost' includes all of us.",
+        "Yes, Scripture says that 'the lost' includes all people.",
+
+      explanation:
+        "Scripture talks about everyone's need for rescue.",
       
       verses: [
         {
@@ -398,10 +516,15 @@ export const questions = [
         },
         {
           reference:
-            "2 Timothy: 2;1-6",
+            "2 Timothy: 2:1-6",
           text:
             "For there is one God, and there is one mediator between God and men, the man Christ Jesus, who gave himself as a ransom for all, which is the testimony given at the proper time."
-
+        },
+        {
+          reference:
+            "Romans 3:11-20",
+          text:
+            "There is no one righteous, not even one; there is no one who understands there is no one who seeks God. All have turned away, they have together become worthless; there is no one who does good, not even one.” “Their throats are open graves; their tongues practice deceit.” “The poison of vipers is on their lips.” “Their mouths are full of cursing and bitterness.” “Their feet are swift to shed blood; ruin and misery mark their ways, and the way of peace they do not know.” “There is no fear of God before their eyes.” Now we know that whatever the law says, it says to those who are under the law, so that every mouth may be silenced and the whole world held accountable to God. Therefore, no one will be declared righteous in God’s sight by the works of the law; rather, through the law we become conscious of our sin. "
         }
       ]
   },
@@ -411,7 +534,7 @@ export const questions = [
     id: 9,
 
     question:
-      "#9 Do you believe Jesus came to save you personally?",
+      "#9 Do you believe Jesus came to 'seek and save you personally?'",
 
     consider: {
       reference: "2 Peter 3:9",
@@ -422,25 +545,42 @@ export const questions = [
     statement:
       "Yes, I believe Jesus came to save me.",
 
-    verses: [
+    explanation:
+      "Scripture points to Jesus as the way to salvation.",
+
+    tabs: {
+      biblical: {
+        title: "Biblical Evidence",
+        verses: [
+          {
+            reference: "1 John 1:8",
+            text:
+              "If we say we have no sin, we deceive ourselves, and the truth is not in us."
+          },
+          {
+            reference: "Revelation 3:20",
+            text:
+              "I stand at the door and knock."
+          },
+          {
+            reference: "John 10:9",
+            text:
+              "I am the door. Whoever enters through me will be saved."
+          }
+        ]
+  },
+  resources: {
+    title: "Resource Links",
+    links: [
       {
-        reference: "1 John 1:8",
-        text:
-          "If we say we have no sin, we deceive ourselves, and the truth is not in us."
-      },
-      {
-        reference: "Revelation 3:20",
-        text:
-          "I stand at the door and knock."
-      },
-      {
-        reference: "John 10:9",
-        text:
-          "I am the door. Whoever enters through me will be saved."
+      label: "Beholding the Glory of God (Audio sermon Tim Keller)",
+      url: "https://www.youtube.com/watch?v=krxcqH522uo",
+      type: "video"
       }
     ]
+  }
+    }
   },
-
 
   {
     id: 10,
@@ -456,6 +596,10 @@ export const questions = [
 
     statement:
       "Yes, I am ready to say yes to Jesus!",
+
+    explanation:
+      "God invites you into relationship with him when you are ready to receive and believe in Jesus Christ.",
+
     verses: [
       {
         reference: "Romans 10:9",

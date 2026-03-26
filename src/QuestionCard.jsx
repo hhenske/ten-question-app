@@ -158,7 +158,7 @@ export default function QuestionCard({ data, onNext, onBack, answer, index }) {
             )}
 
             {/* WITH TABS */}
-            {data.tabs && (
+            {data.tabs && Object.keys(data.tabs).length > 0 && (
               <>
                 <div className="tab-buttons">
                   {Object.entries(data.tabs).map(([key, tab]) => (
